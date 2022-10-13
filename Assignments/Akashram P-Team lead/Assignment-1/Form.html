@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:  rgb(0,0,56);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: rgb(0,0,70) ;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #C0C0C0;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.submitbtn {
+  background-color: rgb(0,0,40);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.submitbtn:hover {
+  opacity: 1;
+}
+.submitbtn:action {
+   background-color:black;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Form</h1>
+    <p>fill details.</p>
+    <hr>
+
+    <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="name" name="name" id="name" required> 
+    <label for="qfn"><b>Qualification</b></label>
+    <input type="text" placeholder="qualification" name="psw" id="psw" required>
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="age" name="mobile" id="mobile" required> 
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="email" name="email" id="email" required> 
+    
+
+    
+    <hr>
+   
+
+    <button type="submit" class="submitbtn">Submit</button>
+  </div>
+  
+ 
+</form>
+
+</body>
+</html>
